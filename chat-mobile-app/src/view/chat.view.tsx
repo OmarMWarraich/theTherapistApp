@@ -52,7 +52,7 @@ export const ChatView = () => {
 
  const updateChatWithApiReply = async (localChat: ChatDto) => {
   const chatApiBaseUrl =
-   "<Your Ngrok Url>";
+   "https://doctor-alpha.vercel.app/";
   const chatClient = new ChatClient(chatApiBaseUrl);
   const newChat = await chatClient.respondTo(localChat);
   setChat(newChat);
